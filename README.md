@@ -11,3 +11,6 @@ This mini project serves the functionality to organise hackathons in a smooth ma
 ## ER  Diagram
 
 <img src="./output.png" />
+
+## Postman Collection
+<a href="https://github.com/destrex271/Hackathon-Hosting/blob/main/AIPlanet.postman_collection.json">Click Here</a>
