@@ -10,3 +10,4 @@ This mini project serves the functionality to organise hackathons in a smooth ma
 
 ## ER  Diagram
 
+<img src="./output.png" />
