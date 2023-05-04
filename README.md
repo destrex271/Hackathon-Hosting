@@ -15,7 +15,9 @@ This mini project serves the functionality to organise hackathons in a smooth ma
 
 ## Project Setup
 To run this project kindly follow these steps:
+
 (It is preferred to prepare a virtual environment if you wish so for the project)
+
 ```python -m venv venv```
 ```pip install -r requirements.txt```
   - Also ensure that you have postgresql locally setup on your system.
