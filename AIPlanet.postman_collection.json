@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "668d5409-9101-46c5-80f3-c7bed5e58aa4",
+		"name": "AIPlanet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19628334"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/users/get_users"
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\" : \"akshat26@\",\n    \"username\" : \"test3@gmail.com\",\n    \"email\" : \"test3@gmail.com\",\n    \"is_organizer\": true,\n    \"dob\" : \"2023-01-27\",\n    \"organization\" : \"Hilo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Hackathons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/hackathons/list"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Hacathon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "background_image",
+							"type": "file",
+							"src": "/home/akshat/Pictures/2023-04-21T13:52:20,305732420+05:30.png"
+						},
+						{
+							"key": "hackathon_image",
+							"type": "file",
+							"src": "/home/akshat/Pictures/2023-04-24T11:14:34,295398890+05:30.png"
+						},
+						{
+							"key": "submission_type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2023-10-23",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2023-10-25",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Hi",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Hello",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/hackathons/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Register For Hackathon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": 1,\n    \"hackathon\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/hackathons/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Submit TO Hackathon",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "View Submission",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "User Hackathons",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
